@@ -7,7 +7,7 @@ body {
   height: 100vh;
   -webkit-user-select: none;
   user-select: none;
-  background-color: rgb(0, 0, 0);
+  background-color: #f2a838;
 }
 
 div.demo-card {
@@ -17,7 +17,7 @@ div.demo-card {
 }
 
 #enter-ar-info .mdl-card__title {
-  color: #fff;
+  color: #212121;
   height: 176px;
   background-color: #f2a838;
 }
