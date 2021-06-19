@@ -88,8 +88,8 @@ class App {
 
   /** Place a sunflower when the screen is tapped. */
   onSelect = () => {
-    if (window.armodel) {
-      const clone = window.armodel.clone();
+    if (window.sunflower) {
+      const clone = window.sunflower.clone();
       clone.position.copy(this.reticle.position);
       this.scene.add(clone);
 
