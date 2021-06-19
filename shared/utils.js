@@ -20,11 +20,14 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("/assets/models/model.gltf", function (gltf) {
-  const flower = gltf.scene.children.find((c) => c.name === "model");
-  flower.castShadow = true;
-  window.model = gltf.scene;
-});
+window.gltfLoader.load(
+  "https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/1.0/Duck/glTF/Duck.gltf",
+  function (gltf) {
+    const flower = gltf.scene.children.find((c) => c.name === "Duck");
+    flower.castShadow = true;
+    window.Duck = gltf.scene;
+  }
+);
 
 window.DemoUtils = {
   /**
