@@ -18,7 +18,7 @@ class Reticle extends THREE.Object3D {
 }
 
 window.gltfLoader.load("/assets/models/model.gltf", function (gltf) {
-  const flower = gltf.scene.children.find((c) => c.name === "sunflower");
+  const flower = gltf.scene.children.find((c) => c.name === "model");
   flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
